@@ -25,6 +25,6 @@ validators['Letters only'] = new LettersOnlyValidator();
 
 strings.forEach(s=> {
     for (var name in validators) {
-        console.log('"' + s + '" ' + (validators[name].isAcceptable(s) ? 'matches' : 'does not match') + name);
+        console.log('"' + s + '" ' + (validators[name].isAcceptable(s) ? 'matches ' : 'does not match ') + name);
     }
 });
